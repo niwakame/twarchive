@@ -2,5 +2,6 @@
 	"consumer_key": "abc123",
 	"consumer_secret": "abc123",
 	"access_token": "def456",
-	"access_secret": "def456"
+	"access_secret": "def456",
+	"list-name": 0
 }

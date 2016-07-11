@@ -10,6 +10,9 @@ import database
 
 # stream listener class
 class Streamy(StreamListener):
+	def __init__(self):
+		print("Starting StreamyMcStreamface")
+
 	def on_data(self, data):
 		try:
 			jdata = json.loads(data)
@@ -48,4 +51,3 @@ else:
 twitter_stream = Stream(auth, Streamy())
 if len(list_members) > 0:
 	twitter_stream.filter(follow=list_members)
-print("Starting StreamyMcStreamface")
